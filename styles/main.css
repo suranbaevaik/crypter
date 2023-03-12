@@ -1,0 +1,271 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 130px 0;
+}
+.main-heading p {
+  color: #777e91;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 12px;
+}
+.main-heading h1 {
+  color: #23262f;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.banner-product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 128px;
+}
+
+.banner-product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 352px;
+}
+.banner-product-details h2 {
+  color: #23262f;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+.banner-product-details div, .banner-product-details article {
+  width: 100%;
+}
+.banner-product-details .product-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+.banner-product-details .product-author div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+.banner-product-details .product-author div span {
+  color: #777e91;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.banner-product-details .product-author div:nth-child(even) {
+  color: #23262f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.banner-product-details .auction-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 32px;
+  background-color: #fcfcfd;
+  border: 2px solid #e6e8ec;
+  -webkit-box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+          box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+  border-radius: 24px;
+}
+.banner-product-details .auction-info :nth-child(1) span, .banner-product-details .auction-info :nth-child(4) span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #23262f;
+  line-height: 24px;
+}
+.banner-product-details .auction-info :nth-child(4) {
+  margin: 24px 0 10px;
+}
+.banner-product-details .auction-info div h3 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+.banner-product-details .auction-info :nth-child(3) span {
+  color: #777e91;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.banner-product-details .auction-info .time-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.banner-product-details .auction-info .time-block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner-product-details .auction-info .time-block time {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #141416;
+  font-size: 32px;
+  line-height: -0.01em;
+}
+.banner-product-details .auction-info .time-block span {
+  font-family: "Poppins", sans-serif;
+  color: #777e91;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.banner-product-details .bid-btn, .banner-product-details .item-details-link {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.banner-product-details .bid-btn button {
+  width: 100%;
+  background-color: #3772ff;
+  border: none;
+  color: #fcfcfd;
+}
+.banner-product-details .item-details-link {
+  margin-top: 10px;
+}
+.banner-product-details .item-details-link a {
+  padding: 16px 136px;
+  color: #23262f;
+}
+.banner-product-details .scroll-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+  margin: 40px 210px 0 0;
+  width: auto;
+}
+.banner-product-details .scroll-arrows :nth-child(1) {
+  padding: 10px;
+}
+.banner-product-details .scroll-arrows :nth-child(2) {
+  border: 2px solid #e6e8ec;
+  border-radius: 40px;
+  padding: 8px;
+}
+
+button {
+  background-color: transparent;
+  padding: 16px 24px;
+  border: 2px solid #e6e8ec;
+  border-radius: 90px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 16px 24px;
+  border: 2px solid #e6e8ec;
+  border-radius: 90px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}

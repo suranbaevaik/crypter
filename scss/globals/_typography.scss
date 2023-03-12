@@ -1,0 +1,19 @@
+@use '../util/fonts' as f;
+
+h1,
+h2,
+h3 {
+    font-family: f.$font-heading;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    font-family: f.$font-text;
+}
+
+span {
+    margin: 0;
+    font-family: f.$font-text;
+}
