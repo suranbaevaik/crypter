@@ -1,0 +1,15 @@
+@use '../util/fonts' as f;
+@use '../globals/colors' as c;
+
+button {
+    background-color: transparent;
+    padding: 16px 24px;
+    border: 2px solid c.$bright-grey;
+    border-radius: 90px;
+    font-family: f.$font-heading;
+    font-size: f.$fs-base;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

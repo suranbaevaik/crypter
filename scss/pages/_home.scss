@@ -1,0 +1,179 @@
+@use '../util/fonts' as f;
+@use '../globals/colors' as c;
+@use '../util/mixins' as m;
+
+.banner-container {
+    @include m.containerPosition;
+    justify-content: center
+}
+
+// MAIN TITLE
+.main-heading {
+    @include m.containerPosition;
+    justify-content: center;
+    margin: 130px 0;
+
+    p {
+        color: c.$slate-grey;
+        font-size: f.$fs-micro;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 12px;
+    }
+
+    h1 {
+        color: c.$charleston-green;
+        font-size: f.$fs-middle;
+        line-height: 40px;
+    }
+}
+
+// PRODUCT INFO
+
+.banner-product-item {
+    @include m.twoblocksPosition;
+    gap: 128px;
+}
+
+.banner-product-details {
+    @include m.containerPosition;
+    width: 352px;
+
+    h2 {
+        color: c.$charleston-green;
+        font-size: f.$fs-kilo;
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+
+    div, article {
+        width: 100%;
+    }
+
+    .product-author {
+        @include m.twoblocksPosition;
+        margin-bottom: 40px;
+
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+
+            span {
+                color: c.$slate-grey;
+                font-size: f.$fs-micro;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            &:nth-child(even) {
+                color: c.$charleston-green; 
+                font-size: f.$fs-milli;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .auction-info {
+        @include m.containerPosition;
+        text-align: center;
+        margin-bottom: 40px;
+
+        padding: 32px;
+        background-color: c.$lotion;
+        border: 2px solid c.$bright-grey;
+        box-shadow: c.$yankees-blue-shadow;
+        border-radius: 24px;
+
+        :nth-child(1) span, :nth-child(4) span {
+            font-weight: 500;
+            font-size: f.$fs-base;
+            color: c.$charleston-green;
+            line-height: 24px;
+        }
+
+        :nth-child(4) {
+            margin: 24px 0 10px;
+        }
+
+        div h3 {
+            font-size: f.$fs-big;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            margin-bottom: 0;
+        }
+
+        :nth-child(3) span {
+            color: c.$slate-grey;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .time-block {
+            display: flex;
+            width: 100%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            time {
+                font-family: f.$font-heading;
+                font-weight: 700;
+                color: c.$chinese-black;
+                font-size: 32px;
+                line-height: -0.01em;
+            }
+
+            span {
+                font-family: f.$font-text;
+                color: c.$slate-grey;
+                font-size: f.$fs-base;
+                line-height: 24px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .bid-btn, .item-details-link {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bid-btn button {
+        width: 100%;
+        background-color: c.$ultramarine;
+        border: none;
+        color: c.$lotion;
+    }
+
+    .item-details-link {
+        margin-top: 10px;
+    }
+
+    .item-details-link a {
+        padding: 16px 136px;
+        color: c.$charleston-green;
+    }
+
+    .scroll-arrows {
+        display: flex;
+        gap: 34px;
+        margin: 40px 210px 0 0;
+        width: auto;
+
+        :nth-child(1) {
+            padding: 10px;
+        }
+
+        :nth-child(2) {
+            border: 2px solid c.$bright-grey;
+            border-radius: 40px;
+            padding: 8px;
+        }
+    }
+}
