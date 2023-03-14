@@ -11,4 +11,12 @@ a:active {
     border-radius: 90px;
     font-family: f.$font-heading;
     font-size: f.$fs-base;
+    box-sizing: border-box;
+}
+
+header a {
+    padding: 12px 16px;
+    font-size: f.$fs-milli;
+    color: c.$charleston-green;
+    font-weight: 700;
 }
