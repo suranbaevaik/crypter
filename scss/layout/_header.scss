@@ -1,0 +1,77 @@
+@use '../util/mixins' as m;
+@use '../globals/colors' as c;
+@use '../util/fonts' as f;
+
+header {
+    display: flex;
+    justify-content: space-around; 
+    gap: 14px;
+    padding: 0 50px;
+
+    .logo {
+        border: none;
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    .nav-bar {
+        @include m.horizontalList;
+
+        display: flex;
+
+        .vertical-line {
+            border-left: 2px solid c.$bright-grey;
+            height: 45px;
+            position: absolute;
+            left: 20%;
+            margin-left: -30px;
+            top: 0;
+        }  
+    }
+
+    .nav-bar, div {
+        margin-top: 25px;
+    }
+
+    .notification-box {
+        padding-top: 5px;
+        margin-left: 200px;
+    }
+
+    .upload-link-box, .connect-wallet-link-box {
+        padding-top: 16px;
+    }
+
+    .upload-link-box a {
+        border: 2px solid c.$ultramarine;
+        background-color: c.$ultramarine;
+        color: c.$lotion;
+    }
+
+    .profile-box {
+        img {
+            width: 42px;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 3px 16px 3px 3px;
+        }
+
+        span {
+            padding-top: 10px;
+
+            u {
+                text-decoration: none;
+                color: c.$sea-green;
+            }
+        }
+    }
+}
+
+hr {
+    margin: 0;
+    border: 1px solid c.$bright-grey;
+}
