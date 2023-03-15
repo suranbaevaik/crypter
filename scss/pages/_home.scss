@@ -61,13 +61,10 @@
             margin-left: 10px;
 
             span {
-                color: c.$slate-grey;
-                font-size: f.$fs-micro;
-                font-weight: 400;
-                line-height: 20px;
+                @include m.microTextStyle;
             }
 
-            &:nth-child(even) {
+            :nth-child(even) {
                 color: c.$charleston-green; 
                 font-size: f.$fs-milli;
                 font-weight: 500;
@@ -176,4 +173,161 @@
             padding: 8px;
         }
     }
+}
+
+// LATEST UPLOADS
+
+.updates-container {
+    @include m.flexPosition;
+    margin-top: 130px;
+
+    .highest-bid-desc {
+        @include m.twoblocksPosition;
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        :nth-child(1) img {
+            padding-top: 8px;
+        }
+
+        .highest-bid-title {
+            margin-right: 80px;
+
+            :nth-child(1) {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: c.$charleston-green;
+            }
+
+            :nth-child(2) {
+                font-weight: 500;
+                font-size: f.$fs-milli;
+                line-height: 24px;
+                color: c.$onyx;
+            }
+        }
+
+        .highest-bid-price {
+            @include m.microTextStyle;
+
+            :nth-child(2) {
+                @include m.priceLabel;
+            }
+        }
+    }
+
+    .art-img {
+        border-radius: 12px;
+    }
+
+    .updates-data-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+        .updates-bid-title {
+            padding-top: 20px;
+    
+            span {
+                font-weight: 500;
+                font-size: f.$fs-base;
+                line-height: f.$fs-small;
+            }
+        }
+    
+        .updates-bid-info {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 28px;
+            }
+    
+            :nth-child(2) {
+                @include m.priceLabel;
+            }
+    
+            :nth-child(3) {
+                @include m.microTextStyle;
+                font-size: f.$fs-milli;
+                padding-top: 5px;
+            }
+        }
+    
+        .updates-placebid-btn {
+        
+            button {
+                padding: 8px 12px;
+            }
+        }
+    }
+
+    .creators-box {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 32px;
+
+        .creators-title {
+            font-weight: 600;
+            font-size: f.$fs-micro;
+            line-height: 20px;
+            color: c.$slate-grey;
+        }
+
+        .creators-list {
+            display: flex;
+            flex-direction: column;
+
+            .creator-item {
+                padding-top: 22px;
+                display: flex;
+
+                .creator-name {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+
+                    :nth-child(odd) {
+                        font-weight: 500;
+                        font-size: f.$fs-milli;
+                        line-height: f.$fs-small;
+                        color: c.$charleston-green;
+                    }
+
+                    :nth-child(even) {
+                        font-weight: 600;
+                        font-size: f.$fs-micro;
+                        line-height: 20px;
+                        color: c.$onyx;
+
+                        mark {
+                            background-color: transparent;
+                            font-weight: 400;
+                            color: c.$slate-grey;
+                        }
+                    }
+                }
+            }
+
+            .divider {
+                width: 224px;
+                border: 1px solid c.$bright-grey;
+            }
+
+            .discover-btn {
+                padding-top: 16px;
+
+                button {
+                    padding: 12px 16px;
+                }
+            }
+        }
+    }
+
 }
