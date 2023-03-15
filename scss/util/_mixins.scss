@@ -39,3 +39,26 @@
       }
     } 
   }
+
+@mixin flexPosition {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin microTextStyle {
+    color: c.$slate-grey;
+    font-size: f.$fs-micro;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@mixin priceLabel {
+    font-weight: 700;
+    font-size: f.$fs-micro;
+    line-height: 12px;
+    color: c.$sea-green;
+    border: 2px solid c.$sea-green;
+    border-radius: 4px;
+    padding: 8px 8px 6px;
+}
+
