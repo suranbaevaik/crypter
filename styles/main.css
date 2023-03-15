@@ -14,6 +14,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: #fcfcfd;
 }
 
 h1,
@@ -450,6 +451,100 @@ a:active {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
 }
+header a {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #23262f;
+  font-weight: 700;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 14px;
+  padding: 0 50px;
+}
+header .logo {
+  border: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+header .nav-bar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .nav-bar li {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 2em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #23262f;
+  -webkit-transition: color 0.2s linear 0s;
+  -o-transition: color 0.2s linear 0s;
+  transition: color 0.2s linear 0s;
+}
+header .nav-bar li:hover {
+  cursor: pointer;
+  color: #777e91;
+}
+header .nav-bar .vertical-line {
+  border-left: 2px solid #e6e8ec;
+  height: 45px;
+  position: absolute;
+  left: 20%;
+  margin-left: -30px;
+  top: 0;
+}
+header .nav-bar, header div {
+  margin-top: 25px;
+}
+header .notification-box {
+  padding-top: 5px;
+  margin-left: 200px;
+}
+header .upload-link-box, header .connect-wallet-link-box {
+  padding-top: 16px;
+}
+header .upload-link-box a {
+  border: 2px solid #3772ff;
+  background-color: #3772ff;
+  color: #fcfcfd;
+}
+
+header .profile-box img {
+  width: 42px;
+}
+header .profile-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 3px 16px 3px 3px;
+}
+header .profile-box span {
+  padding-top: 10px;
+}
+header .profile-box span u {
+  text-decoration: none;
+  color: #45b36b;
+}
+
+hr {
+  margin: 0;
+  border: 1px solid #e6e8ec;
+}
 
 .highest-bid {
   grid-area: main;
@@ -463,9 +558,9 @@ a:active {
   grid-area: third;
 }
 .third-bid button {
-  border: 2px solid #3772ff;
-  background-color: #3772ff;
-  color: #fcfcfd;
+=======
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .fourth-bid {
@@ -505,4 +600,3 @@ a:active {
   grid-template-columns: 165px 165px;
   grid-template-rows: 32px 26px 48px;
   grid-template-areas: "img title" "img info" "img button";
-}

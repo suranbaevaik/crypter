@@ -12,6 +12,34 @@
     justify-content: space-between;
 }
 
+@mixin resetList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin horizontalList {
+    @include resetList;
+  
+    li {
+      display: inline-block;
+      margin: {
+        left: -2px;
+        right: 2em;
+      }
+      font-family: f.$font-heading;
+      font-weight: 700;
+      font-size: f.$fs-milli;
+      color: c.$charleston-green;
+      transition: color 0.2s linear 0s;
+
+      &:hover {
+        cursor: pointer;
+        color: c.$slate-grey;
+      }
+    } 
+  }
+
 @mixin flexPosition {
     display: flex;
     justify-content: center;
@@ -33,3 +61,4 @@
     border-radius: 4px;
     padding: 8px 8px 6px;
 }
+
