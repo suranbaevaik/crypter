@@ -92,3 +92,23 @@
     font-weight: 400;
     color: c.$slate-grey;
   }
+
+  @mixin scrollArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+
+    :hover {
+      padding: 12px 10px;
+      border: 2px solid c.$bright-grey;
+      border-radius: 40px;
+    }
+  }
+
+  @mixin scrollArrowsContainer {
+    display: flex;
+    gap: 34px;
+    width: 90px;
+    height: 45px;
+  }
