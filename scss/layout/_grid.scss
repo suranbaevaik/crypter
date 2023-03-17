@@ -66,3 +66,30 @@
         "img info"
         "img button";
 }
+
+// HOT COLLECTIONS GRID
+.first-pic {
+    grid-area: first-img;
+}
+
+.second-pic {
+    grid-area: second-img;
+}
+
+.third-pic {
+    grid-area: third-img;
+}
+
+.fourth-pic {
+    grid-area: fourth-img;
+}
+
+.collection-pic-box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: 240px 84px;
+    grid-template-areas: 
+        "first-img first-img first-img"
+        "second-img third-img fourth-img";
+}
