@@ -61,3 +61,34 @@
       }
     } 
   }
+
+  @mixin badgeBox {
+    width: 55px;
+    padding: 2px 8px;
+    border-radius: 24px;
+    background: c.$ultramarine;
+    color: c.$lotion;
+    font-size: f.$fs-micro;
+    line-height: 20px;
+    font-weight: 600; 
+  }
+
+  @mixin nameStyle {
+    font-weight: 500;
+    font-size: f.$fs-milli;
+    line-height: f.$fs-small;
+    color: c.$charleston-green;
+  }
+
+  @mixin priceStyle {
+    font-weight: 600;
+    font-size: f.$fs-micro;
+    line-height: 20px;
+    color: c.$onyx;
+  }
+
+  @mixin currencyStyle {
+    background-color: transparent;
+    font-weight: 400;
+    color: c.$slate-grey;
+  }

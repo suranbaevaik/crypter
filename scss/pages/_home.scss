@@ -296,22 +296,14 @@
                     margin-left: 20px;
 
                     :nth-child(odd) {
-                        font-weight: 500;
-                        font-size: f.$fs-milli;
-                        line-height: f.$fs-small;
-                        color: c.$charleston-green;
+                        @include m.nameStyle;
                     }
 
                     :nth-child(even) {
-                        font-weight: 600;
-                        font-size: f.$fs-micro;
-                        line-height: 20px;
-                        color: c.$onyx;
+                        @include m.priceStyle;
 
                         mark {
-                            background-color: transparent;
-                            font-weight: 400;
-                            color: c.$slate-grey;
+                            @include m.currencyStyle;
                         }
                     }
                 }

@@ -1,0 +1,162 @@
+@use '../globals/colors' as c;
+@use '../util/mixins' as m;
+@use '../util/fonts' as f;
+
+.popular-sellers-container {
+    height: 663px;
+    margin-top: 128px;
+    padding: 128px 70px 0;
+    background-color: c.$cultured;
+
+    .ps-title-container {
+        @include m.twoblocksPosition;
+
+        .ps-title {
+            span {
+                font-weight: 600;
+                font-size: f.$fs-small;
+                line-height: 32px;
+                color: c.$slate-grey;
+            }
+            
+            div {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: f.$fs-middle;
+                    line-height: f.$fs-big;
+                    color: c.$charleston-green;
+                    letter-spacing: -0.01em;
+                }
+
+                img {
+                    padding-top: 18px;
+                }
+            }
+        }
+
+        .search-bar {
+            position: relative;
+        }
+
+        .arrow-down {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+        }
+
+        .search-bar select {
+            width: 256px;
+            height: 48px;
+            background-color: c.$lotion;
+            padding: 8px 8px 8px 16px;
+            border: 2px solid c.$bright-grey;
+            border-radius: 12px;
+            font-weight: 500;
+            font-family: f.$font-text;
+            font-size: f.$fs-milli;
+            line-height: f.$fs-small;
+            color: c.$charleston-green;
+            -webkit-appearance: button;
+            appearance: none;
+            outline: none;
+        }
+
+    }
+
+    .ps-list-container {
+        @include m.twoblocksPosition;
+        align-items: center;
+        gap: 32px;
+
+        .ps-user-card {
+            @include m.containerPosition;
+
+            gap: 24px;
+            justify-content: center;
+            width: 200px;
+            height: 247px;
+            background-color: c.$lotion;
+            border-radius: 16px;
+            transition-property: all;
+            transition: transform .2s;
+
+            .card-icons {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+
+                .badge-box {
+                    @include m.badgeBox;
+
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                }
+
+                .purple-badge {
+                    background: c.$amethyst;
+                }
+
+                .green-badge {
+                    background: c.$sea-green;
+                }
+
+                .black-badge {
+                    background: c.$charleston-green;
+                }
+
+                .grey-badge {
+                    background: c.$slate-grey;
+                }
+
+                .plus-arrow-box {
+                    padding-left: 20px;
+                }
+            }
+
+            hr {
+                width: 150px;
+                border: 1px solid c.$bright-grey;
+            }
+
+            .card-user-info {
+                @include m.containerPosition;
+
+                gap: 10px;
+                
+                :nth-child(2) {
+                    @include m.nameStyle;
+                }
+
+                :nth-child(3) {
+                    @include m.priceStyle;
+
+                    mark {
+                        @include m.currencyStyle;
+                    }
+                }
+            }
+        }
+
+        .ps-user-card:hover {
+            transform: scale(1.1);
+            box-shadow: c.$yankees-blue-shadow;  
+        }
+
+        .scroll-arrow {
+            display: flex;
+            justify-content: center;
+            width: 40px;
+
+            :hover {
+                padding: 12px 10px;
+                border: 2px solid c.$bright-grey;
+                border-radius: 40px;
+            }
+        }
+    }
+}
