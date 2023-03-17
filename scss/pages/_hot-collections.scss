@@ -1,0 +1,81 @@
+@use '../globals/colors' as c;
+@use '../util/mixins' as m;
+@use '../util/fonts' as f;
+
+.hot-collections-container {
+    @include m.containerPosition;
+    justify-content: center;
+    width: 100%;
+    height: 790px;
+    background-color: c.$cultured;
+
+    .ht-title-container {
+        display: flex;
+        justify-content: flex-start;
+        width: 1120px;
+
+        h3 {
+            @include m.titleStyle;
+        }
+    } 
+
+    .ht-pictures-container {
+        @include m.twoblocksPosition;
+        gap: 32px;
+
+        .ht-collection-card {
+            display: flex;
+            flex-direction: column;
+
+            .collection-pic-box {
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            .collection-desc-box {
+                
+                .collection-name span {
+                    font-weight: 600;
+                    font-size: f.$fs-small;
+                    line-height: 32px;
+                }
+
+                .owner-info-box {
+                    @include m.twoblocksPosition;
+                    margin-top: 10px;
+
+                    .owner-name {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        img {
+                            width: 24px;
+                        }
+
+                        span {
+                            font-weight: 500;
+                            font-size: f.$fs-milli;
+                            line-height: f.$fs-small;
+                        }
+                    }
+
+                    .amount-box {
+                        span {
+                            font-weight: 700;
+                            font-size: f.$fs-micro;
+                            line-height: f.$fs-micro;
+                            border: 2px solid c.$bright-grey;
+                            border-radius: 4px;
+                            padding: 8px 8px 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -112,3 +112,11 @@
     width: 90px;
     height: 45px;
   }
+
+@mixin titleStyle {
+  font-weight: 700;
+  font-size: f.$fs-middle;
+  line-height: f.$fs-big;
+  letter-spacing: -0.01em;
+  color: c.$charleston-green;
+}  
