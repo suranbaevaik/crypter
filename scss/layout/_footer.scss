@@ -1,0 +1,131 @@
+@use '../globals/colors' as c;
+@use '../util/mixins' as m;
+@use '../util/fonts' as f;
+
+footer {
+    .top-footer {
+        @include m.twoblocksPosition;
+        width: 1120px;
+        margin: 0 auto;
+        padding: 80px 0 48px;
+    
+        .footer-logo-container {
+            width: 256px;
+    
+            img {
+                width: 126px;
+                margin-top: -24px;
+            }
+    
+            span {
+                font-size: f.$fs-small;
+            }
+        }
+    
+        .footer-nav {
+            span {
+                font-weight: 500;
+                line-height: f.$fs-small;
+            }
+        
+            ul {
+                @include m.resetList;
+                margin-top: 36px;
+                
+                li {
+                    padding-bottom: 24px;
+                    font-family: f.$font-text;
+                    font-weight: 700;
+                    font-size: f.$fs-milli;
+                    line-height: f.$fs-base;
+                    color: c.$slate-grey; 
+
+                    &:hover {
+                        color: c.$charleston-green;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    
+        .footer-contact {
+            :nth-child(1) span {
+                font-weight: 500;
+                line-height: f.$fs-small;
+            }
+    
+            :nth-child(2):not(.blue-arrow) {
+                width: 352px;
+                margin-top: 32px;
+    
+                span {
+                    font-weight: 400;
+                    font-size: f.$fs-milli;
+                    line-height: f.$fs-small;
+                }
+            }
+    
+            .input-box {
+                position: relative;
+                margin-top: 20px;
+    
+                .blue-arrow {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 12px 16px;
+                    border: 2px solid c.$bright-grey;
+                    border-radius: 90px;
+                    font-family: f.$font-text;
+                    font-size: f.$fs-milli;
+                    line-height: f.$fs-small;
+                    color: c.$charleston-green;
+    
+                    &::placeholder {
+                        font-family: f.$font-text;
+                        color: c.$slate-grey;
+                        font-size: f.$fs-milli;
+                        line-height: f.$fs-small;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .bottom-footer {
+        @include m.twoblocksPosition;
+        padding: 32px 0;
+        width: 1120px;
+        margin: 0 auto;
+
+        .copyright {
+            span {
+                color: c.$slate-grey;
+                font-size: f.$fs-micro;
+                line-height: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .cookie {
+            span {
+                font-size: f.$fs-micro;
+                line-height: 20px;
+            }
+
+            :nth-child(2) {
+                font-weight: 600;
+                color: c.$ultramarine;
+            }
+        }
+    }
+}
