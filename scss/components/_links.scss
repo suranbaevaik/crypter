@@ -3,7 +3,7 @@
 
 a,
 a:visited,
-a:active {
+a:active:not(.logo, .profile-box a, .item-details-link a) {
     text-decoration: none;
     background-color: transparent;
     padding: 16px 24px;
@@ -12,11 +12,20 @@ a:active {
     font-family: f.$font-heading;
     font-size: f.$fs-base;
     box-sizing: border-box;
+    color: c.$charleston-green;
+    transition: 0.3s;
+
+    &:hover:not(.logo, .profile-box a) {
+        background-color: c.$ultramarine;
+        border: 2px solid c.$ultramarine;
+        color: c.$lotion;
+    }
 }
 
-header a {
+header a,
+header a:visited,
+header a:active:not(.logo, .profile-box a) {
     padding: 12px 16px;
     font-size: f.$fs-milli;
-    color: c.$charleston-green;
     font-weight: 700;
 }

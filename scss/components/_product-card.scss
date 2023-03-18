@@ -6,8 +6,57 @@
     @include m.containerPosition;
     gap: 16px;
 
-    .product-img img{
+    .product-img {
+        position: relative;
+
+        img {
+            border-radius: 16px;
+        }
+
+        &:hover .place-bid-block {
+            display: flex;
+        }
+    }
+    
+    .product-img .place-bid-block {
+        @include m.twoblocksPosition;
+        flex-direction: column;
+        width: 256px;
+        height: 303px;
         border-radius: 16px;
+        background: c.$charleston-green;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        opacity: 0.9;
+        display: none;
+
+        .icons-block {
+            @include m.twoblocksPosition;
+            margin-left: 8px;
+
+            :nth-child(2) {
+                padding-top: 10px;
+            }
+        }
+
+        .pb-btn-block {
+            text-align: center;
+            margin-bottom: 15px;
+
+            button {
+                width: 134px;
+                padding: 12px 16px;
+                background: c.$ultramarine;
+                border: 2px solid c.$ultramarine;
+                font-size: f.$fs-milli;
+                color: c.$lotion;
+
+                img {
+                    margin-left: 5px;
+                }
+            }
+        }
     }
 
     .product-title {

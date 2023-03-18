@@ -8,8 +8,15 @@ button {
     border-radius: 90px;
     font-family: f.$font-heading;
     font-size: f.$fs-base;
+    transition: 0.3s;
 
     &:hover {
         cursor: pointer;
+    }
+
+    &:hover:not(.main-heading button, .discover-btn button, .load-container button) {
+        background-color: c.$ultramarine;
+        border: 2px solid c.$ultramarine;
+        color: c.$lotion;
     }
 }

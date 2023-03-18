@@ -220,14 +220,12 @@ span {
 }
 .banner-product-details .bid-btn button {
   width: 100%;
-  background-color: #3772ff;
-  border: none;
-  color: #fcfcfd;
 }
 .banner-product-details .item-details-link {
   margin-top: 10px;
 }
 .banner-product-details .item-details-link a {
+  width: 100%;
   padding: 16px 136px;
   color: #23262f;
 }
@@ -320,6 +318,45 @@ span {
 }
 .updates-container .art-img {
   border-radius: 12px;
+}
+.updates-container .highest-bid .updates-bid-img, .updates-container .highest-bid .highest-bid-img, .updates-container .second-bid .updates-bid-img, .updates-container .second-bid .highest-bid-img, .updates-container .third-bid .updates-bid-img, .updates-container .third-bid .highest-bid-img, .updates-container .fourth-bid .updates-bid-img, .updates-container .fourth-bid .highest-bid-img {
+  position: relative;
+}
+.updates-container .highest-bid .updates-bid-img .black-arrow-box, .updates-container .highest-bid .highest-bid-img .black-arrow-box, .updates-container .second-bid .updates-bid-img .black-arrow-box, .updates-container .second-bid .highest-bid-img .black-arrow-box, .updates-container .third-bid .updates-bid-img .black-arrow-box, .updates-container .third-bid .highest-bid-img .black-arrow-box, .updates-container .fourth-bid .updates-bid-img .black-arrow-box, .updates-container .fourth-bid .highest-bid-img .black-arrow-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #141416;
+  width: 160px;
+  height: 148px;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  opacity: 0.9;
+  display: none;
+}
+.updates-container .highest-bid .updates-bid-img .black-arrow-box img, .updates-container .highest-bid .highest-bid-img .black-arrow-box img, .updates-container .second-bid .updates-bid-img .black-arrow-box img, .updates-container .second-bid .highest-bid-img .black-arrow-box img, .updates-container .third-bid .updates-bid-img .black-arrow-box img, .updates-container .third-bid .highest-bid-img .black-arrow-box img, .updates-container .fourth-bid .updates-bid-img .black-arrow-box img, .updates-container .fourth-bid .highest-bid-img .black-arrow-box img {
+  padding-top: 15px;
+}
+.updates-container .highest-bid .updates-bid-img:hover .black-arrow-box, .updates-container .highest-bid .highest-bid-img:hover .black-arrow-box, .updates-container .second-bid .updates-bid-img:hover .black-arrow-box, .updates-container .second-bid .highest-bid-img:hover .black-arrow-box, .updates-container .third-bid .updates-bid-img:hover .black-arrow-box, .updates-container .third-bid .highest-bid-img:hover .black-arrow-box, .updates-container .fourth-bid .updates-bid-img:hover .black-arrow-box, .updates-container .fourth-bid .highest-bid-img:hover .black-arrow-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.updates-container .highest-bid .highest-bid-img .black-arrow-box, .updates-container .second-bid .highest-bid-img .black-arrow-box, .updates-container .third-bid .highest-bid-img .black-arrow-box, .updates-container .fourth-bid .highest-bid-img .black-arrow-box {
+  width: 448px;
+  height: 432px;
 }
 .updates-container .updates-data-box {
   display: -webkit-box;
@@ -1107,14 +1144,22 @@ button {
   border-radius: 90px;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 button:hover {
   cursor: pointer;
 }
+button:hover:not(.main-heading button, .discover-btn button, .load-container button) {
+  background-color: #3772ff;
+  border: 2px solid #3772ff;
+  color: #fcfcfd;
+}
 
 a,
 a:visited,
-a:active {
+a:active:not(.logo, .profile-box a, .item-details-link a) {
   text-decoration: none;
   background-color: transparent;
   padding: 16px 24px;
@@ -1124,12 +1169,24 @@ a:active {
   font-size: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #23262f;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover:not(.logo, .profile-box a),
+a:visited:hover:not(.logo, .profile-box a),
+a:active:not(.logo, .profile-box a, .item-details-link a):hover:not(.logo, .profile-box a) {
+  background-color: #3772ff;
+  border: 2px solid #3772ff;
+  color: #fcfcfd;
 }
 
-header a {
+header a,
+header a:visited,
+header a:active:not(.logo, .profile-box a) {
   padding: 12px 16px;
   font-size: 14px;
-  color: #23262f;
   font-weight: 700;
 }
 
@@ -1146,8 +1203,64 @@ header a {
           align-items: center;
   gap: 16px;
 }
+.product-card .product-img {
+  position: relative;
+}
 .product-card .product-img img {
   border-radius: 16px;
+}
+.product-card .product-img:hover .place-bid-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-card .product-img .place-bid-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 256px;
+  height: 303px;
+  border-radius: 16px;
+  background: #23262f;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  opacity: 0.9;
+  display: none;
+}
+.product-card .product-img .place-bid-block .icons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 8px;
+}
+.product-card .product-img .place-bid-block .icons-block :nth-child(2) {
+  padding-top: 10px;
+}
+.product-card .product-img .place-bid-block .pb-btn-block {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.product-card .product-img .place-bid-block .pb-btn-block button {
+  width: 134px;
+  padding: 12px 16px;
+  background: #3772ff;
+  border: 2px solid #3772ff;
+  font-size: 14px;
+  color: #fcfcfd;
+}
+.product-card .product-img .place-bid-block .pb-btn-block button img {
+  margin-left: 5px;
 }
 .product-card .product-title {
   display: -webkit-box;
@@ -1280,11 +1393,6 @@ header .notification-box {
 header .upload-link-box, header .connect-wallet-link-box {
   padding-top: 16px;
 }
-header .upload-link-box a {
-  border: 2px solid #3772ff;
-  background-color: #3772ff;
-  color: #fcfcfd;
-}
 header .profile-box img {
   width: 42px;
 }
@@ -1321,11 +1429,6 @@ hr {
 
 .third-bid {
   grid-area: third;
-}
-.third-bid button {
-  border: 2px solid #3772ff;
-  background-color: #3772ff;
-  color: #fcfcfd;
 }
 
 .fourth-bid {

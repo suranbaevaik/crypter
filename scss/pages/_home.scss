@@ -144,18 +144,16 @@
 
     .bid-btn button {
         width: 100%;
-        background-color: c.$ultramarine;
-        border: none;
-        color: c.$lotion;
     }
 
     .item-details-link {
         margin-top: 10px;
-    }
 
-    .item-details-link a {
-        padding: 16px 136px;
-        color: c.$charleston-green;
+        a {
+            width: 100%;
+            padding: 16px 136px;
+            color: c.$charleston-green;
+        }
     }
 
     .scroll-arrows {
@@ -216,6 +214,39 @@
 
     .art-img {
         border-radius: 12px;
+    }
+
+    .highest-bid, .second-bid, .third-bid, .fourth-bid {
+        .updates-bid-img, .highest-bid-img {
+            position: relative;
+
+            .black-arrow-box {
+                @include m.containerPosition;
+                justify-content: center;
+                background: c.$chinese-black;
+                width: 160px;
+                height: 148px;
+                border-radius: 12px;
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                opacity: 0.9;
+                display: none;
+    
+                img {
+                    padding-top: 15px;
+                }
+            }
+    
+            &:hover .black-arrow-box {
+                display: flex;
+            }
+        }
+
+        .highest-bid-img .black-arrow-box{
+            width: 448px;
+            height: 432px;
+        }
     }
 
     .updates-data-box {
