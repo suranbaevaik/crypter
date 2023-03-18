@@ -45,20 +45,7 @@
         }
 
         .search-bar select {
-            width: 256px;
-            height: 48px;
-            background-color: c.$lotion;
-            padding: 8px 8px 8px 16px;
-            border: 2px solid c.$bright-grey;
-            border-radius: 12px;
-            font-weight: 500;
-            font-family: f.$font-text;
-            font-size: f.$fs-milli;
-            line-height: f.$fs-small;
-            color: c.$charleston-green;
-            -webkit-appearance: button;
-            appearance: none;
-            outline: none;
+            @include m.selectStyle;
         }
 
     }

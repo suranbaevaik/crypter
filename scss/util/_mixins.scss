@@ -101,7 +101,7 @@
 
     :hover {
       padding: 12px 10px;
-      border: 2px solid c.$bright-grey;
+      outline: 2px solid c.$bright-grey;
       border-radius: 40px;
     }
   }
@@ -109,7 +109,7 @@
   @mixin scrollArrowsContainer {
     display: flex;
     gap: 34px;
-    width: 90px;
+    width: 100px;
     height: 45px;
   }
 
@@ -120,3 +120,29 @@
   letter-spacing: -0.01em;
   color: c.$charleston-green;
 }  
+
+@mixin selectStyle {
+  width: 256px;
+  height: 48px;
+  background-color: c.$lotion;
+  padding: 8px 8px 8px 16px;
+  border: 2px solid c.$bright-grey;
+  border-radius: 12px;
+  font-weight: 500;
+  font-family: f.$font-text;
+  font-size: f.$fs-milli;
+  line-height: f.$fs-small;
+  color: c.$charleston-green;
+  -webkit-appearance: button;
+  appearance: none;
+  outline: none;
+}
+
+@mixin selectLabel {
+  font-family: f.$font-text;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: f.$fs-micro;
+  line-height: f.$fs-micro;
+  color: c.$crayola;
+}
