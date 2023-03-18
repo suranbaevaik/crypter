@@ -1,6 +1,6 @@
-@use '../util/fonts' as f;
-@use '../globals/colors' as c;
-@use '../util/mixins' as m;
+@use '../../globals/colors' as c;
+@use '../../util/mixins' as m;
+@use '../../util/fonts' as f;
 
 .banner-container {
     @include m.containerPosition;
@@ -32,12 +32,20 @@
 
 .banner-product-item {
     @include m.twoblocksPosition;
-    gap: 128px;
+    gap: 8em;
+}
+
+.banner-image {
+    width: 60%;
+
+    img {
+        width: 100%;
+    }
 }
 
 .banner-product-details {
     @include m.containerPosition;
-    width: 352px;
+    width: 22em;
 
     h2 {
         color: c.$charleston-green;
@@ -151,7 +159,7 @@
 
         a {
             width: 100%;
-            padding: 16px 136px;
+            padding: 16px 135px;
             color: c.$charleston-green;
         }
     }

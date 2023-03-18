@@ -87,7 +87,14 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 128px;
+  gap: 8em;
+}
+
+.banner-image {
+  width: 60%;
+}
+.banner-image img {
+  width: 100%;
 }
 
 .banner-product-details {
@@ -101,7 +108,7 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 352px;
+  width: 22em;
 }
 .banner-product-details h2 {
   color: #23262f;
@@ -226,7 +233,7 @@ span {
 }
 .banner-product-details .item-details-link a {
   width: 100%;
-  padding: 16px 136px;
+  padding: 16px 135px;
   color: #23262f;
 }
 .banner-product-details .scroll-arrows {
@@ -1402,7 +1409,7 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 14px;
+  gap: 0.875em;
   padding: 0 50px;
 }
 header .logo {
@@ -1687,4 +1694,10 @@ footer .bottom-footer .cookie span {
 footer .bottom-footer .cookie :nth-child(2) {
   font-weight: 600;
   color: #3772ff;
+}
+
+@media (min-width: 1440px) {
+  header {
+    font-size: 18px;
+  }
 }
