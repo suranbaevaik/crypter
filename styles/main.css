@@ -864,6 +864,7 @@ span {
           align-items: center;
   height: 1600px;
   gap: 32px;
+  margin-bottom: 128px;
 }
 .discover-container .discover-title {
   width: 1120px;
@@ -1135,6 +1136,64 @@ span {
 }
 .discover-container .load-container button img {
   margin-left: 14px;
+}
+
+.footer-banner-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  width: 1120px;
+  padding-top: 80px;
+}
+.footer-banner-container .fb-desc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 480px;
+}
+.footer-banner-container .fb-desc-container span {
+  color: #777e91;
+}
+.footer-banner-container .fb-desc-container :nth-child(1) span {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.footer-banner-container .fb-desc-container h2 {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.footer-banner-container .fb-desc-container :nth-child(3) span {
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-banner-container .fb-desc-container :nth-child(4) {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.footer-banner-container .fb-img-container img {
+  width: 640px;
 }
 
 button {
@@ -1415,6 +1474,7 @@ header .profile-box span u {
 }
 
 hr {
+  width: 100%;
   margin: 0;
   border: 1px solid #e6e8ec;
 }
