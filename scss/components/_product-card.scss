@@ -1,0 +1,72 @@
+@use '../globals/colors' as c;
+@use '../util/mixins' as m;
+@use '../util/fonts' as f;
+
+.product-card {
+    @include m.containerPosition;
+    gap: 16px;
+
+    .product-img img{
+        border-radius: 16px;
+    }
+
+    .product-title {
+        @include m.twoblocksPosition;
+
+        :nth-child(odd) {
+            font-weight: 500;
+            line-height: f.$fs-small;
+            color: c.$charleston-green;
+        }
+
+        :nth-child(even) {
+            @include m.priceLabel;
+        }
+    }
+
+    .product-owner {
+        @include m.twoblocksPosition;
+        padding-top: 10px;
+
+        span {
+            font-size: f.$fs-milli;
+            line-height: f.$fs-small;
+            font-weight: 500;
+            color: c.$onyx;
+        }
+    }
+
+    hr {
+        width: 256px;
+        border: 1px solid c.$bright-grey;
+        border-radius: 1px;
+    }
+
+    .product-update {
+        @include m.twoblocksPosition;
+        gap: 32px;
+        align-items: center;
+
+        span {
+            font-size: f.$fs-micro;
+            line-height: 20px;
+            font-weight: 400;
+            color: c.$slate-grey; 
+        }
+
+        mark {
+            font-family: f.$font-text;
+            font-size: f.$fs-micro;
+            line-height: 20px;
+            background-color: transparent;
+            font-weight: 600;
+            color: c.$onyx;
+        }
+
+        :nth-child(1) {
+            display: flex;
+            gap: 3px;
+        }
+        
+    }
+}
