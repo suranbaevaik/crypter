@@ -1,0 +1,148 @@
+@use './mixins' as m;
+@use '../globals/colors' as c;
+@use './fonts' as f;
+
+@mixin bannerMedia {
+    .banner-product-item {
+        gap: 3em;
+    
+        .banner-image {
+            width: 33em;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .banner-product-details {
+            width: 19em;
+    
+            h2 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+    
+            .product-author, .auction-info {
+                margin-bottom: 20px;
+            }
+    
+            .auction-info {
+                padding: 24px;
+            }
+    
+            .bid-btn button{
+                padding: 12px 16px;
+            } 
+            
+            .item-details-link a {
+                padding: 12px 37%;
+            }
+        }
+        
+    }
+}
+
+@mixin updatesMedia {
+    .updates-container {
+        @include m.containerPosition;
+        gap: 20px;
+
+        .arts-catalog-box {
+            border: none;
+
+            .updates-divider {
+                display: none;
+            }
+        }
+
+        .creators-box {
+            margin-top: 1.5em;
+            .creators-list {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                gap: 3em;
+
+                .divider {
+                    display: none;
+                }
+
+                .discover-btn {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@mixin updatesSmallMedia {
+    .updates-container {
+        .arts-catalog-box {
+            @include m.flexPosition;
+        }
+
+        .second-bid, .third-bid, .fourth-bid {
+            display: none;
+        }
+
+        .creators-box {
+            width: 30em;
+            margin-left: 0;
+            .creators-list {
+                justify-content: flex-start;
+
+                .hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@mixin popularSellerMedia {
+    .popular-sellers {
+        width: 100%;
+
+        .popular-sellers-container {
+            width: 55em;
+
+            .ps-title-container {
+                .search-bar div span {
+                    color: c.$crayola;
+                    font-size: f.$fs-micro;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .select-input {
+                    margin-top: 10px;
+                    margin-right: 0px;
+                }
+
+                .arrow-down {
+                    top: 30%;
+                    right: 5%;
+                }
+            }
+
+            .ps-list-container {
+               
+                .scroll-arrow {
+                    display: none;
+                }
+            }
+        }
+
+        .bottom-scrolls {
+            @include m.flexPosition;
+            @include m.scrollArrowsContainer;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 2em;
+
+            .scroll-arrow {
+                @include m.scrollArrow;
+            }
+        }
+    }
+}

@@ -124,7 +124,7 @@
 @mixin selectStyle {
   width: 256px;
   height: 48px;
-  background-color: c.$lotion;
+  background: c.$lotion;
   padding: 8px 8px 8px 16px;
   border: 2px solid c.$bright-grey;
   border-radius: 12px;

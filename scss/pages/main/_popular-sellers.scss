@@ -1,12 +1,17 @@
-@use '../globals/colors' as c;
-@use '../util/mixins' as m;
-@use '../util/fonts' as f;
+@use '../../globals/colors' as c;
+@use '../../util/mixins' as m;
+@use '../../util/fonts' as f;
+
+.popular-sellers {
+    background-color: c.$cultured;
+}
 
 .popular-sellers-container {
+    width: 1120px;
     height: 663px;
+    margin: 0 auto;
     margin-top: 128px;
-    padding: 128px 70px 0;
-    background-color: c.$cultured;
+    padding-top: 128px;
 
     .ps-title-container {
         @include m.twoblocksPosition;
@@ -35,17 +40,20 @@
         }
 
         .search-bar {
-            position: relative;
+            .select-bar {
+                position: relative;
+            }
         }
 
         .arrow-down {
             position: absolute;
-            top: 8px;
-            right: 10px;
+            top: 20%;
+            right: 22%;
         }
 
         .search-bar select {
             @include m.selectStyle;
+            margin-right: 62px;
         }
 
     }

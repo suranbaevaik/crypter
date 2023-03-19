@@ -1,6 +1,6 @@
-@use '../util/fonts' as f;
-@use '../globals/colors' as c;
-@use '../util/mixins' as m;
+@use '../../globals/colors' as c;
+@use '../../util/mixins' as m;
+@use '../../util/fonts' as f;
 
 .banner-container {
     @include m.containerPosition;
@@ -25,6 +25,7 @@
         color: c.$charleston-green;
         font-size: f.$fs-middle;
         line-height: 40px;
+        text-align: center;
     }
 }
 
@@ -32,12 +33,12 @@
 
 .banner-product-item {
     @include m.twoblocksPosition;
-    gap: 128px;
+    gap: 8em;
 }
 
 .banner-product-details {
     @include m.containerPosition;
-    width: 352px;
+    width: 22em;
 
     h2 {
         color: c.$charleston-green;
@@ -147,18 +148,18 @@
     }
 
     .item-details-link {
-        margin-top: 10px;
+        margin-top: 2%;
 
         a {
             width: 100%;
-            padding: 16px 136px;
+            padding: 16px 38.5%;
             color: c.$charleston-green;
         }
     }
 
     .scroll-arrows {
         @include m.scrollArrowsContainer;
-        margin: 40px 250px 0 0;
+        margin: 5% 70% 0 0;
 
         .scroll-arrow {
             @include m.scrollArrow;
