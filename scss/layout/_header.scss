@@ -3,10 +3,11 @@
 @use '../util/fonts' as f;
 
 header {
+    width: 98vw;
     display: flex;
     justify-content: space-around; 
-    gap: 0.875em;
-    padding: 0 50px;
+    gap: 0.75em;
+    padding: 0 80px;
 
     .logo {
         border: none;
@@ -23,7 +24,7 @@ header {
             border-left: 2px solid c.$bright-grey;
             height: 45px;
             position: absolute;
-            left: 20%;
+            left: 23%;
             margin-left: -30px;
             top: 0;
         }  
@@ -35,7 +36,7 @@ header {
 
     .notification-box {
         padding-top: 5px;
-        margin-left: 200px;
+        margin-left: 5.5em;
     }
 
     .upload-link-box, .connect-wallet-link-box {
