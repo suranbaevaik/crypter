@@ -64,6 +64,10 @@
                 padding-left: 5px;
             }
         }
+
+        .advanced-btn button {
+            width: 19.5em;
+        }
     }
 
     hr {
@@ -221,6 +225,272 @@
         }
     }
     
+}
+
+
+@media (min-width: 1200px) {
+    .discover-container {
+        .discover-nav {
+            .hidden, .advanced-btn {
+                display: none;
+            }
+        }
+
+        .bottom-scrolls {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    .discover-container {
+        width: 100%;
+        padding: 0 24px;
+
+        .discover-title {
+            width: 100%;
+        }
+
+        .discover-nav {
+            width: 100%;
+
+            nav ul .hide {
+                display: none;
+            }
+
+            .hidden, .advanced-btn {
+                display: none;
+            }
+        }
+
+        hr {
+            width: 900px;
+        }
+
+        .discover-filter {
+            width: 100%;
+
+            .select-box {
+                display: flex;
+                flex-direction: column;
+
+                .arrow-down {
+                    top: 42%;
+                    right: 5%;
+                }
+            }
+
+            .filter-hide {
+             display: none;
+            }
+        }
+
+        .discover-products-container {
+            width: 100%;
+
+            .hide {
+                display: none;
+            }
+        }
+
+        .bottom-scrolls {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .discover-container {
+        width: 100%;
+        padding: 0 24px;
+
+        .discover-title {
+            width: 100%;
+        }
+
+        .discover-nav {
+            width: 100%;
+
+            nav ul .hide {
+                display: none;
+            }
+        }
+
+        hr {
+            width: 900px;
+        }
+
+        .discover-filter {
+            width: 100%;
+
+            .select-box {
+                display: flex;
+                flex-direction: column;
+
+                .arrow-down {
+                    top: 42%;
+                    right: 5%;
+                }
+            }
+
+            .filter-hide {
+             display: none;
+            }
+        }
+
+        .discover-products-container {
+            width: 100%;
+
+            .hide {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .discover-container {
+        padding: 64px 0 0;
+        height: 58.5em;
+
+        hr {
+            display: none;
+        }
+
+        .discover-title {
+            padding: 0 24px;
+
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        .discover-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;
+            padding: 0 24px;
+
+            nav {
+                display: none;
+            }
+
+            .select-box select {
+                width: 22em;
+            }
+
+            .filter-btn {
+                display: none;
+            }
+        }
+
+        .discover-filter {
+            display: none;
+        }
+
+        .discover-products-container {
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+
+            .product-card {
+                margin-right: 2em;
+                scroll-margin-right: 1200px;
+            }
+
+        }
+
+        .load-container {
+            display: none;
+        }
+
+        .bottom-scrolls {
+            @include m.scrollArrowsContainer;
+            width: 100%;
+            justify-content: center;
+
+            div {
+                @include m.scrollArrow;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-container {
+        padding: 64px 0 0;
+        height: 58.5em;
+
+        hr {
+            display: none;
+        }
+
+        .discover-title {
+            padding: 0 24px;
+
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        .discover-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;
+            padding: 0 24px;
+
+            nav {
+                display: none;
+            }
+
+            .select-box select {
+                width: 22em;
+            }
+
+            .filter-btn {
+                display: none;
+            }
+        }
+
+        .discover-filter {
+            display: none;
+        }
+
+        .discover-products-container {
+            flex-wrap: nowrap;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+
+            .product-card {
+                margin-right: 2em;
+                scroll-margin-right: 1200px;
+            }
+
+        }
+
+        .load-container {
+            display: none;
+        }
+
+        .bottom-scrolls {
+            @include m.scrollArrowsContainer;
+            width: 100%;
+            justify-content: center;
+
+            div {
+                @include m.scrollArrow;
+            }
+        }
+    }
 }
 
 

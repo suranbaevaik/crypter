@@ -587,7 +587,9 @@
         <!-- HOT COLLECTIONS -->
         <section class="hot-collections-container">
             <section class="ht-title-container">
-                <h3>Hot collections</h3>
+                <div>
+                    <h3>Hot collections</h3>
+                </div>
             </section>
             <section class="ht-pictures-container">
                 <article class="ht-collection-card">
@@ -687,6 +689,14 @@
                     </div>
                 </article>
             </section>
+            <div class="bottom-scrolls">
+                <div class="scroll-arrow">
+                    <img src="./home-page-assets/icons/arrow-left.svg" alt="arrow-left-icon">
+                </div>
+                <div class="scroll-arrow">
+                    <img src="./home-page-assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                </div>
+            </div>
         </section>
 
         <!-- DISCOVER -->
@@ -701,21 +711,30 @@
                     </select>
                     <img src="./home-page-assets/icons/arrow-down.svg" class="arrow-down first-ar" alt="arrow-down-icon">
                 </div>
+                <div class="select-box hidden">
+                    <select>
+                        <option value="recently-added">All items</option>
+                    </select>
+                    <img src="./home-page-assets/icons/arrow-down.svg" class="arrow-down first-ar" alt="arrow-down-icon">
+                </div>
                 <nav>
                     <ul>
                         <li>All items</li>
                         <li>Art</li>
                         <li>Game</li>
                         <li>Photography</li>
-                        <li>Music</li>
-                        <li>Video</li>
+                        <li class="hide">Music</li>
+                        <li class="hide">Video</li>
                     </ul>
                 </nav>
-                <div>
+                <div class="filter-btn">
                     <button>
                         Filter
                         <img src="./home-page-assets/icons/x.svg" alt="x-icon">
                     </button>
+                </div>
+                <div class="advanced-btn">
+                    <button>Advanced Filter</button>
                 </div>
             </section>
             <hr>
@@ -734,7 +753,7 @@
                     </select>
                     <img src="./home-page-assets/icons/arrow-down.svg" class="arrow-down third-ar" alt="arrow-down-icon">
                 </div>
-                <div class="select-box">
+                <div class="select-box filter-hide">
                     <label for="creators">Creators</label>
                     <select id="creators">
                         <option value="verified-only">Verified only</option>
@@ -1017,7 +1036,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="product-card">
+                <article class="product-card hide">
                     <div class="product-img">
                         <div>
                             <img src="./home-page-assets/images/coins.png" alt="coins">
@@ -1059,7 +1078,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="product-card">
+                <article class="product-card hide">
                     <div class="product-img">
                         <div>
                             <img src="./home-page-assets/images/pyramid2.png" alt="pyramid">
@@ -1108,6 +1127,14 @@
                     <img src="./home-page-assets/icons/load.svg" alt="load">
                 </button>
             </div>
+            <div class="bottom-scrolls">
+                <div class="scroll-arrow">
+                    <img src="./home-page-assets/icons/arrow-left.svg" alt="arrow-left-icon">
+                </div>
+                <div class="scroll-arrow">
+                    <img src="./home-page-assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                </div>
+            </div>
         </section>
         <hr>
 
@@ -1123,7 +1150,7 @@
                 <div>
                     <span>A creative agency that lead and inspire</span>
                 </div>
-                <div>
+                <div class="buttons-box">
                     <div>
                         <button>Earn more</button>
                     </div>
@@ -1136,7 +1163,7 @@
                 <img src="./home-page-assets/images/cubes-coins.png" alt="cubes-coins">
             </section>
         </section>
-        <hr>
+        <hr class="footer-line">
     </main>
 
     <!-- FOOTER -->
@@ -1150,6 +1177,7 @@
                     <span>The New Creative Economy.</span>
                 </div>
             </section>
+            <hr class="top-footer-line">
             <section class="footer-nav">
                 <div>
                     <span>Crypter.</span>
@@ -1162,6 +1190,7 @@
                     </ul>
                 </div>
             </section>
+            <hr class="top-footer-line">
             <section class="footer-nav">
                 <div>
                     <span>Info</span>
@@ -1174,6 +1203,7 @@
                     </ul>
                 </div>
             </section>
+            <hr class="top-footer-line">
             <section class="footer-contact">
                 <div>
                     <span>Join Newsletter</span>

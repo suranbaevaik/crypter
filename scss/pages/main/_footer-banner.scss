@@ -57,3 +57,85 @@
         }
     }
 }
+
+
+
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    .footer-banner-container {
+        width: 100%;
+
+        .fb-img-container {
+            img {
+                width: 26em;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .footer-banner-container {
+        width: 100%;
+
+        .fb-img-container {
+            img {
+                width: 26em;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .footer-banner-container {
+        width: 100%;
+        padding-left: 40px;
+
+        .fb-desc-container {
+            h2 {
+                font-size: 48px;
+            }
+        }
+        
+        .fb-img-container {
+            img {
+                width: 20em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-banner-container {
+        @include m.containerPosition;
+
+        .fb-desc-container {
+            align-items: center;
+
+            h2 {
+                text-align: center;
+            }
+
+            .buttons-box {
+                flex-direction: column;
+                width: 20em;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+        .fb-img-container {
+            margin-top: 40px;
+        }
+    }
+
+    .footer-line {
+        display: none;
+    }
+}
