@@ -15,7 +15,7 @@ a:active:not(.logo, .profile-box a, .item-details-link a) {
     color: c.$charleston-green;
     transition: 0.3s;
 
-    &:hover:not(.logo, .profile-box a) {
+    &:hover:not(.logo, .profile-box a, .home-link a) {
         background-color: c.$ultramarine;
         border: 2px solid c.$ultramarine;
         color: c.$lotion;

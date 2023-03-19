@@ -1862,6 +1862,150 @@ span {
     display: none;
   }
 }
+.upload-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.upload-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 24px 88px;
+}
+.upload-container nav .home-link a {
+  padding: 12px 16px;
+  font-weight: 700;
+}
+.upload-container nav .home-link a img {
+  padding-right: 8px;
+}
+.upload-container nav .nav-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.upload-container nav .nav-text span {
+  font-weight: 700;
+  font-size: 14px;
+}
+.upload-container nav .nav-text :nth-child(1) {
+  color: #777e91;
+}
+.upload-container .upload-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  width: 800px;
+  padding: 80px 0 128px;
+}
+.upload-container .upload-item-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.upload-container .upload-item-container section h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.upload-container .upload-item-container section p {
+  text-align: center;
+  font-size: 14px;
+  color: #777e91;
+  line-height: 24px;
+}
+.upload-container .upload-item-container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 32px;
+}
+.upload-container .upload-item-container article .upload-item-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  border: 1px solid #e6e8ec;
+  border-radius: 16px;
+}
+.upload-container .upload-item-container article .upload-item-card .ui-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 16px;
+}
+.upload-container .upload-item-container article .upload-item-card .ui-image img {
+  width: 90%;
+}
+.upload-container .upload-item-container article .upload-item-card .ui-btn {
+  padding-bottom: 24px;
+}
+.upload-container .upload-item-container article .upload-item-card .ui-btn button {
+  padding: 12px 16px;
+}
+.upload-container .upload-item-container div {
+  padding-top: 32px;
+}
+.upload-container .upload-item-container div p {
+  color: #777e91;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
 button {
   background-color: transparent;
   padding: 16px 24px;
@@ -1899,9 +2043,9 @@ a:active:not(.logo, .profile-box a, .item-details-link a) {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-a:hover:not(.logo, .profile-box a),
-a:visited:hover:not(.logo, .profile-box a),
-a:active:not(.logo, .profile-box a, .item-details-link a):hover:not(.logo, .profile-box a) {
+a:hover:not(.logo, .profile-box a, .home-link a),
+a:visited:hover:not(.logo, .profile-box a, .home-link a),
+a:active:not(.logo, .profile-box a, .item-details-link a):hover:not(.logo, .profile-box a, .home-link a) {
   background-color: #3772ff;
   border: 2px solid #3772ff;
   color: #fcfcfd;
