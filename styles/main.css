@@ -2006,6 +2006,120 @@ span {
   text-align: center;
 }
 
+.connect-wallet-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+.connect-wallet-container .cw-title-container {
+  width: 100%;
+  padding: 80px 90px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.connect-wallet-container .cw-title-container h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  padding-left: 20px;
+}
+.connect-wallet-container .up-line {
+  width: 1120px;
+}
+.connect-wallet-container .cw-wallets-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1120px;
+  padding: 80px 0 136px;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list .wallet-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 554px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
+  position: relative;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list .wallet-item span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 32px;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list .wallet-item .arrow-hide {
+  display: none;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list .wallet-item:hover {
+  outline: 2px solid #e6e8ec;
+  border-radius: 16px;
+}
+.connect-wallet-container .cw-wallets-container .wallet-list .wallet-item:hover .arrow-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 52px;
+}
+.connect-wallet-container .cw-wallets-container .qr-code-container {
+  width: 450px;
+}
+.connect-wallet-container .cw-wallets-container .qr-code-container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.connect-wallet-container .cw-wallets-container .qr-code-container span {
+  font-weight: 400;
+  color: #777e91;
+  font-size: 12px;
+  line-height: 20px;
+}
+.connect-wallet-container .cw-wallets-container .qr-code-container .qr-code {
+  width: 380px;
+  margin: 20px 0;
+  padding: 60px 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #e6e8ec;
+  border-radius: 16px;
+  background-color: #e6e8ec;
+}
+
 button {
   background-color: transparent;
   padding: 16px 24px;

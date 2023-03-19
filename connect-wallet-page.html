@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload</title>
+    <title>Connect Wallet</title>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.css">
+
 </head>
 <body>
     <header>
@@ -43,51 +44,52 @@
     </header>
     <hr class="header-line">
 
-    <!-- MAIN PART -->
-    <main class="upload-container">
-        <nav>
-            <div class="home-link">
-                <a href="./home-page.html">
-                    <img src="./home-page-assets/icons/arrow-left.svg" alt="arrow-left">
-                    Back to home
-                </a>
-            </div>
-            <div class="nav-text">
-                <span>Home</span>
-                <img src="./home-page-assets/icons/right-arrow.svg" alt="right-headarrow">
-                <span>Upload Item</span>
-            </div>
-        </nav>
-        <hr>
-        <section class="upload-item-container">
-            <section>
-                <h1>Upload item</h1>
-                <p>Choose <b>“Single”</b> if you want your collectible to be one of a kind or <b>“Multiple”</b> if you want to sell one collectible multiple times</p>
-            </section>
-            <article>
-                <div class="upload-item-card">
-                    <div class="ui-image">
-                        <img src="./home-page-assets/images/white-cube.png" alt="white-cube">
-                    </div>
-                    <div class="ui-btn">
-                        <button>Create Single</button>
-                    </div>
+    <!-- MAIN PAGE -->
+    <main class="connect-wallet-container">
+        <section class="cw-title-container">
+            <img src="./home-page-assets/icons/big-left-arrow.svg" alt="big-left-arrow">
+            <h1>Connect your wallet</h1>
+        </section>
+        <hr class="up-line">
+        <section class="cw-wallets-container">
+            <div class="wallet-list">
+                <div class="wallet-item">
+                    <img src="./home-page-assets/icons/wallet-purple.svg" alt="wallet-purple">
+                    <span>Coinbase Wallet</span>
+                    <img src="./home-page-assets/icons/arrow-right-black.svg" class="arrow-hide" alt="arrow-right">
                 </div>
-                <div class="upload-item-card">
-                    <div class="ui-image">
-                        <img src="./home-page-assets/images/cube-lays.png" alt="cube-lays">
-                    </div>
-                    <div class="ui-btn">
-                        <button>Create Multiple</button>
-                    </div>
+                <div class="wallet-item">
+                    <img src="./home-page-assets/icons/wallet-blue.svg" alt="wallet-blue">
+                    <span>Coinbase Wallet</span>
+                    <img src="./home-page-assets/icons/arrow-right-black.svg" class="arrow-hide" alt="arrow-right">
                 </div>
-            </article>
-            <div>
-                <p>We do not own your private keys and cannot access your funds without your confirmation.</p>
+                <div class="wallet-item">
+                    <img src="./home-page-assets/icons/wallet-green.svg" alt="wallet-green">
+                    <span>Coinbase Wallet</span>
+                    <img src="./home-page-assets/icons/arrow-right-black.svg" class="arrow-hide" alt="arrow-right">
+                </div>
+                <div class="wallet-item">
+                    <img src="./home-page-assets/icons/wallet-pink.svg" alt="wallet-pink">
+                    <span>Coinbase Wallet</span>
+                    <img src="./home-page-assets/icons/arrow-right-black.svg" class="arrow-hide" alt="arrow-right">
+                </div>
+            </div>
+            <div class="qr-code-container">
+                <div>
+                    <h2>Scan to connect</h2>
+                    <span>Powered by UI8.Wallet</span>
+                </div>
+                <div class="qr-code">
+                    <img src="./home-page-assets/images/qr-code.png" alt="qr-code">
+                </div>
+                <div>
+                    <button>Don't have a wallet app?</button>
+                </div>
             </div>
         </section>
         <hr>
     </main>
+
 
     <!-- FOOTER -->
     <footer>

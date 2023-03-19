@@ -1,0 +1,100 @@
+@use '../util/mixins' as m;
+@use '../globals/colors' as c;
+@use '../util/fonts' as f;
+
+
+.connect-wallet-container {
+    @include m.containerPosition;
+    align-items: center;
+
+    .cw-title-container {
+        width: 100%;
+        padding: 80px 90px 40px;
+        display: flex;
+
+        h1 {
+            font-size: f.$fs-big;
+            line-height: f.$fs-big;
+            margin: 0;
+            padding-left: 20px;
+        }
+    }
+
+    .up-line {
+        width: 1120px;
+    }
+
+    .cw-wallets-container {
+        @include m.twoblocksPosition;
+        width: 1120px;
+        padding: 80px 0 136px;
+
+        .wallet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .wallet-item {
+                display: flex;
+                width: 554px;
+                align-items: center;
+                padding: 32px;
+                position: relative;
+
+                span {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 32px;
+                    padding-left: 32px;
+                }
+
+                .arrow-hide {
+                    display: none;
+                }
+
+                &:hover {
+                    outline: 2px solid c.$bright-grey;
+                    border-radius: 16px;
+
+                    .arrow-hide {
+                        display: flex;
+                        position: absolute;
+                        right: 52px;
+                    }
+                }
+                
+            }
+        }
+
+        .qr-code-container {
+            width: 450px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -0.01em;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-weight: 400;
+                color: c.$slate-grey;
+                font-size: f.$fs-micro;
+                line-height: 20px;
+            }
+
+            .qr-code {
+                width: 380px;
+                margin: 20px 0;
+                padding: 60px 24px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid c.$bright-grey;
+                border-radius: 16px;
+                background-color: c.$bright-grey;
+            }
+        }
+    }
+}
