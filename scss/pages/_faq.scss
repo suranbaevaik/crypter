@@ -1,0 +1,81 @@
+@use '../util/mixins' as m;
+@use '../globals/colors' as c;
+@use '../util/fonts' as f;
+
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 128px;
+
+    .faq-title-container {
+        width: 736px;
+        padding: 80px;
+        span {
+            text-transform: uppercase;
+            color: c.$slate-grey;
+            font-weight: 700;
+            font-size: f.$fs-micro;
+            line-height: 12px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: f.$fs-base;
+            line-height: 24px;
+        }
+    }
+
+    .menu-container {
+        @include m.twoblocksPosition;
+        padding: 0 80px;
+
+        aside {
+            width: 730px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            span {
+                font-weight: 700;
+                font-size: f.$fs-milli;
+                line-height: 16px;
+                padding-left: 10px;
+            }
+        }
+
+        .question-block {
+            width: 730px;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            p {
+                font-weight: 400;
+                line-height: 24px;
+                color: c.$slate-grey;
+            }
+
+            .title-question {
+                @include m.twoblocksPosition;
+                align-items: center;
+                padding: 32px 0;
+                border-top: 1px solid c.$bright-grey;
+            }
+
+            button {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
