@@ -4,16 +4,19 @@
 @use '../globals/colors' as c;
 
 @media (min-width: 1200px) {
+    // HEADER
     header {
         .menu-icon-box {
             display: none;
         }
     }
 
+    // BANNER
     .updates-divider {
         display: none;
     }
 
+    // POPULAR SELLERS
     .bottom-scrolls {
         display: none;
     }
@@ -24,6 +27,7 @@
 }
 
 @media (min-width: 990px) and (max-width: 1200px) {
+    // HEADER
     header {
         gap: 0.75;
         padding: 0 30px;
@@ -41,6 +45,7 @@
         }
     }
     
+    // BANNER
     @include media.bannerMedia;
 
     @include media.updatesMedia;
@@ -49,10 +54,12 @@
         width: 53.5em;
     }
 
+    // POPULAR SELLERS
     @include media.popularSellerMedia;
 }
 
 @media (max-width: 1024px) {
+    // HEADER
     header {
         padding: 0 30px;
 
@@ -69,15 +76,18 @@
         }
     }
 
+    // BANNER
     @include media.bannerMedia;
 
     @include media.updatesMedia;
 
+    // POPULAR SELLERS
     @include media.popularSellerMedia;
 }
 
 
 @media (min-width: 768px) and (max-width: 990px) {
+    // HEADER
     header {
         padding: 0 15px;
 
@@ -94,6 +104,7 @@
         }
     }
 
+    // BANNER
     .banner-product-item {
         @include m.containerPosition;
         justify-content: center;
@@ -150,6 +161,7 @@
         }
     }
 
+    // POPULAR SELLERS
     .popular-sellers {
         padding-bottom: 128px;
 
@@ -190,6 +202,7 @@
 }
 
 @media (max-width: 768px) {
+    // HEADER
     header {
         padding: 0;
 
@@ -209,6 +222,7 @@
         display: none;
     }
 
+    // BANNER
     .main-heading {
         margin: 80px 0;
     }
@@ -298,6 +312,7 @@
         border: 1px solid c.$bright-grey;
     }
 
+    // POPULAR SELLERS
     .popular-sellers {
         padding-bottom: 128px;
         

@@ -2,6 +2,8 @@
 @use '../globals/colors' as c;
 @use './fonts' as f;
 
+// BANNER
+
 @mixin bannerMedia {
     .banner-product-item {
         gap: 3em;
@@ -98,6 +100,8 @@
         }
     }
 }
+
+// POPULAR SELLERS
 
 @mixin popularSellerMedia {
     .popular-sellers {
