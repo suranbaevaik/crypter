@@ -106,11 +106,16 @@
 @mixin popularSellerMedia {
     .popular-sellers {
         width: 100%;
+        padding-left: 24px;
 
         .popular-sellers-container {
-            width: 55em;
+            width: 100%;
 
             .ps-title-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
                 .search-bar div span {
                     color: c.$crayola;
                     font-size: f.$fs-micro;
@@ -130,6 +135,17 @@
             }
 
             .ps-list-container {
+                height: 300px;
+                width: 100%;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                white-space: nowrap;
+                scroll-snap-type: x mandatory;
+
+                .ps-user-card {
+                    padding: 1.5em;
+                    scroll-margin-right: 1400px;
+                }
                
                 .scroll-arrow {
                     display: none;
