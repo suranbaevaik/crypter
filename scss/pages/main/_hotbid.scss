@@ -33,22 +33,52 @@
 
 }
 
+
+
+
+
 @media (min-width: 1200px) {
 
 }
 
-@media (min-width: 990px) and (max-width: 1200px) {
+@mixin hotbidMedia {
+    .hot-bid-container {
+        width: 100%;
+        padding-left: 24px;
 
+        .hb-title-container{
+            width: 100%;
+            padding-right: 24px;
+        }
+
+        .hb-product-card-container {
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+
+            .product-card {
+                margin-right: 2em;
+                scroll-margin-right: 1200px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    @include hotbidMedia;
 }
 
 @media (max-width: 1024px) {
-
+    @include hotbidMedia;
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
-
+    @include hotbidMedia;
 }
 
 @media (max-width: 768px) {
-    
+    @include hotbidMedia;
 }

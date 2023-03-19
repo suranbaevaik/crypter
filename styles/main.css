@@ -760,6 +760,94 @@ span {
   width: 1120px;
 }
 
+@media (min-width: 990px) and (max-width: 1200px) {
+  .hot-bid-container {
+    width: 100%;
+    padding-left: 24px;
+  }
+  .hot-bid-container .hb-title-container {
+    width: 100%;
+    padding-right: 24px;
+  }
+  .hot-bid-container .hb-product-card-container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .hot-bid-container .hb-product-card-container .product-card {
+    margin-right: 2em;
+    scroll-margin-right: 1200px;
+  }
+}
+@media (max-width: 1024px) {
+  .hot-bid-container {
+    width: 100%;
+    padding-left: 24px;
+  }
+  .hot-bid-container .hb-title-container {
+    width: 100%;
+    padding-right: 24px;
+  }
+  .hot-bid-container .hb-product-card-container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .hot-bid-container .hb-product-card-container .product-card {
+    margin-right: 2em;
+    scroll-margin-right: 1200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .hot-bid-container {
+    width: 100%;
+    padding-left: 24px;
+  }
+  .hot-bid-container .hb-title-container {
+    width: 100%;
+    padding-right: 24px;
+  }
+  .hot-bid-container .hb-product-card-container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .hot-bid-container .hb-product-card-container .product-card {
+    margin-right: 2em;
+    scroll-margin-right: 1200px;
+  }
+}
+@media (max-width: 768px) {
+  .hot-bid-container {
+    width: 100%;
+    padding-left: 24px;
+  }
+  .hot-bid-container .hb-title-container {
+    width: 100%;
+    padding-right: 24px;
+  }
+  .hot-bid-container .hb-product-card-container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
+  .hot-bid-container .hb-product-card-container .product-card {
+    margin-right: 2em;
+    scroll-margin-right: 1200px;
+  }
+}
 .hot-collections-container {
   display: -webkit-box;
   display: -ms-flexbox;
